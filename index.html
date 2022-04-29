@@ -6,104 +6,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      .container {
-        background-image: url("https://us.123rf.com/450wm/peshkova/peshkova1912/peshkova191213132/135761600-empty-spot-on-white-table-full-of-office-tools-mock-up-3d-rendering.jpg?ver=6");
-        height: 700px;
-        width: 100%;
-        background-size: contain;
-        display: inline-block;
-        background-position: center;
-        position: relative;
-        box-sizing: border-box;
-      }
+           body {
+             font-family: Arial, Helvetica, sans-serif;
+             box-sizing: border-box;
+             margin: 0;
+             padding: 0;
+           }
+           .container {
+             background-image: url("https://us.123rf.com/450wm/peshkova/peshkova1912/peshkova191213132/135761600-empty-spot-on-white-table-full-of-office-tools-mock-up-3d-rendering.jpg?ver=6");
+             height: 700px;
+             width: 100%;
+             background-size: contain;
+             display: inline-block;
+             background-position: center;
+             position: relative;
+             box-sizing: border-box;
+           }
 
-      .logo {
-        height: 100px;
-        width: 100px;
-        padding-left: 40px;
-        padding-top: 40px;
-        cursor: pointer;
-        box-shadow:
-        transition: box-shadow 0.3s;
-      }
+           .logo {
+             height: 100px;
+             width: 100px;
+             padding-left: 40px;
+             padding-top: 40px;
+             cursor: pointer;
+             box-shadow:
+             transition: box-shadow 0.3s;
+           }
 
-      .logo:hover {
-        box-shadow: 0px, 20px, 60px, rgba(0, 0, 0, 0.4);
-      }
+           .logo:hover {
+             box-shadow: 0px, 20px, 60px, rgba(0, 0, 0, 0.4);
+           }
 
-      li,
-      a,
-      button {
-        font-size: 20px;
-        font-weight: 400;
-      }
+           li,
+           a,
+           button {
+             font-size: 20px;
+             font-weight: 400;
+           }
 
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px;
-      }
+           .navbar {
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             padding: 30px;
+           }
 
-      .nav-options {
-        padding-top: 30px;
-        list-style: none;
-        text-decoration: none;
-      }
+           .nav-options {
+             padding-top: 20px;
+             list-style: none;
+             text-decoration: none;
+           }
 
-      .nav-options li {
-        display: inline-block;
-        padding: 10px;
-      }
+           #links {
+               text-decoration: none;
+               color:rgba(0, 0, 0, 0.907)
 
-      .nav-options li a {
-        transition: all 0.2s ease 0s;
-      }
 
-      .nav-options li a:hover {
-        color: rgb(9, 9, 9);
-      }
+           }
 
-      button {
-        border-radius: 20px;
-        background-color: rgb(209, 218, 218);
-        cursor: pointer;
-        transition: all 0.2s ease 0s;
-      }
+           #links:hover {
+               color:blue;
+           }
 
-      button:hover {
-        background-color: rgb(57, 170, 101);
-      }
+           .nav-options li {
+             display: inline-block;
+             padding: 10px;
+           }
 
-      .image {
-        border-radius: 50%;
-      }
-      #image {
-        text-align: center;
-      }
+           .nav-options li a {
+             transition: all 0.2s ease 0s;
+           }
 
-      #name {
-        text-align: center;
-        font-family: cursive;
-        font-weight: bolder;
-        font-style: italic;
-        color: rgba(255, 0, 0, 0.907);
-      }
+           .nav-options li a:hover {
+             color: rgb(9, 9, 9);
+           }
 
-      #subtext {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: rgb(0, 0, 0);
-      }
+           button {
+             border-radius: 20px;
+             background-color: rgb(209, 218, 218);
+             cursor: pointer;
+             transition: all 0.2s ease 0s;
+           }
 
-      #icons {
-          justify-content: center;
-      }
+           button:hover {
+             background-color: rgb(171, 244, 132);
+           }
+
+           .image {
+             border-radius: 50%;
+             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+             opacity: 1;
+             -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+           }
+
+           #image {
+             text-align: center;
+
+           }
+
+           .image:hover {
+               box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8);
+               opacity: 0.5;
+           }
+
+           #name {
+             text-align: center;
+             font-family: cursive;
+             font-weight: bolder;
+             font-style: italic;
+             color: rgba(255, 0, 0, 0.907);
+           }
+
+           #subtext {
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             color: rgb(0, 0, 0);
+           }
+
+           #icons {
+               justify-content: center;
+               cursor: pointer;
+           }
+
+           #heading {
+               text-align: center;
+               margin: auto;
+               border: 0;
+               padding-top: 20px;
+
+           }
+
+           .info {
+               background-image: url(https://wallpaperaccess.com/full/38127.jpg);
+           }
+
+           #heading {
+               color: aliceblue;
+               font-size: larger;
+               font-family: cursive;
+           }
+
+           #text {
+               color: aliceblue;
+               text-align: center;
+               padding-top: 50px;
+
+           }
     </style>
   </head>
   <body>
@@ -113,16 +161,16 @@
         <nav>
           <div class="nav-options">
             <li>
-              <a href="#"><b>Home</b></a>
+              <a href="#" id="links"><b>Home</b></a>
             </li>
             <li>
-              <a href="#"><b>Services</b></a>
+              <a href="#" id="links"><b>Services</b></a>
             </li>
             <li>
-              <a href="#"><b>About</b></a>
+              <a href="#" id="links"><b>About</b></a>
             </li>
             <li>
-              <a href="#"><b>Projects</b></a>
+              <a href="#" id="links"><b>Projects</b></a>
             </li>
           </div>
         </nav>
@@ -141,12 +189,37 @@
       </div>
       <div id="name">
         <h1>Naveen Manchala</h1>
-        <div id="subtext"><p>Junior Web Developer</p></div>
+        <div id="subtext"><p>Student / Junior Web Developer</p></div>
+        <div id="icons">
+          <img src="./twitter.png" class="twitter" height="50px" width="50px" />
+          <img
+            src="./facebook.png"
+            class="facebook"
+            height="50px"
+            width="50px"
+          />
+          <img
+            src="./linkedin.png"
+            class="linkedin"
+            height="50px"
+            width="50px"
+          />
+        </div>
       </div>
-      <div id="icons">
-        <img src="./twitter.png" class="twitter" height="50px" width="50px" />
-        <img src="./facebook.png" class="facebook" height="50px" width="50px" />
-        <img src="./linkedin.png" class="linkedin" height="50px" width="50px" />
+    </div>
+    <div class="info">
+      <div id="heading"><h1>About Me</h1></div>
+      <div id="text">
+        <h1>Education</h1>
+        <p>Masters Degree - Metallic Materials Technology</p>
+        <p>Bachelors Degree - Mechanical Engineering</p>
+        <h1>Experience</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          dolor culpa quaerat voluptate rem dolore neque quidem necessitatibus.
+          Neque quam quaerat vero sunt voluptatem dolores repellat asperiores
+          eligendi reprehenderit et?
+        </p>
       </div>
     </div>
   </body>
