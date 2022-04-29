@@ -29,7 +29,7 @@
         padding-left: 40px;
         padding-top: 40px;
         cursor: pointer;
-        box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.3);
+        box-shadow:
         transition: box-shadow 0.3s;
       }
 
@@ -72,7 +72,7 @@
 
       button {
         border-radius: 20px;
-        background-color: aqua;
+        background-color: rgb(209, 218, 218);
         cursor: pointer;
         transition: all 0.2s ease 0s;
       }
@@ -81,11 +81,28 @@
         background-color: rgb(57, 170, 101);
       }
 
-      #image {
-        height: 50px;
-        width: 100px;
+      .image {
         border-radius: 50%;
-        position: absolute;
+      }
+      #image {
+        text-align: center;
+      }
+
+      #name {
+        text-align: center;
+        font-family: cursive;
+        font-weight: bolder;
+        font-style: italic;
+        color: rgba(255, 0, 0, 0.907);
+      }
+
+      #subtext {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(0, 0, 0);
+      }
+
+      #icons {
+          justify-content: center;
       }
     </style>
   </head>
@@ -113,7 +130,24 @@
           ><button><b>Contact</b></button></a
         >
       </div>
-      <div id="image"><img src="" /></div>
+      <div id="image">
+        <img
+          src="./profile-pic.jpeg"
+          class="image"
+          alt="image"
+          height="20%"
+          width="20%"
+        />
+      </div>
+      <div id="name">
+        <h1>Naveen Manchala</h1>
+        <div id="subtext"><p>Junior Web Developer</p></div>
+      </div>
+      <div id="icons">
+        <img src="./twitter.png" class="twitter" height="50px" width="50px" />
+        <img src="./facebook.png" class="facebook" height="50px" width="50px" />
+        <img src="./linkedin.png" class="linkedin" height="50px" width="50px" />
+      </div>
     </div>
   </body>
 </html>
